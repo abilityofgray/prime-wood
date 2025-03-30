@@ -171,4 +171,19 @@ input[type=file] {
   flex-wrap: wrap;
 }
 
+.advantages__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input[type=submit] {
+  cursor: pointer;
+}
+
+input[type=submit] {
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=styles.css.map */
