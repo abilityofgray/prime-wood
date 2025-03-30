@@ -1,4 +1,5 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 @font-face {
   font-family: 'ProximaNova-Bold';
@@ -27,4 +28,11 @@
   url('./fonts/proximanova/ProximaNova-Semibold.woff2') format('woff2');
   font-weight: normal;
 	font-style: normal;
+}
+
+@mixin montserrat-semibold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }

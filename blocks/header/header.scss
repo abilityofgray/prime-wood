@@ -1,4 +1,5 @@
-@use '../../color_sheme.scss';
+@use '../../color_scheme.scss';
+@use '../../fonts/fonts';
 
 .logo__container {
   
@@ -12,12 +13,29 @@
   font-family: 'ProximaNova-SemiBold', sans-serif;
   font-size: 16px;
   a:visited {
-    color: color_sheme.$text-color-major;
+    color: color_scheme.$text-color-major;
   }
 
 }
 .navigate__container {
   
+}
+.menu__cart {
+  position: relative;
+  margin-right: 9px;
+}
+.menu__cart-counter-wrap {
+  position: absolute;
+  top: -7px;
+  left: 12px;
+  background-color: color_scheme.$accent-color-major;
+  padding: 3px;
+  border-radius: 50%;
+}
+.menu__cart-counter {
+  @include fonts.montserrat-semibold;
+  font-size: 10px;
+  color: color_scheme.$cart-counter-text-color;
 }
 .navigate__list {
   display: flex;
@@ -31,12 +49,18 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 38px;
   a {
-    color: color_sheme.$text-color-major;
+    color: color_scheme.$text-color-major;
   }
   a:visited {
-    color: color_sheme.$text-color-major;
+    color: color_scheme.$text-color-major;
+  }
+  
+}
+.menu__item {
+  &:first-child {
+    margin-right: -8px;
   }
 }
 

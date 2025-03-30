@@ -1,3 +1,5 @@
+@use '../../color_scheme.scss';
+
 .breadcrumbs__container {
   display: flex;
   align-items: center;
@@ -12,8 +14,11 @@
   gap: 9px;
 }
 .breadcrumbs__item {
-
+  &:last-child {
+    color:  color_scheme.$text-color-accent;
+  }
   &:not(:last-child) {
+    
     &::after {
       content: "/";
       width: 35px;

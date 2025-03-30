@@ -50,6 +50,9 @@
               <li class="menu__item">
                 <a class="menu__cart" href="#">
                   <img src="./asset/icon/cart.svg" alt="корзина">
+                  <div class="menu__cart-counter-wrap">
+                    <div class="menu__cart-counter">44</div>
+                  </div>
                 </a>
               </li>
             </ul>
@@ -79,7 +82,7 @@
             <p class="showrooms__p">Приглашаем Вас посмотреть вживую коллекции офисной мебели для персонала, кабинеты для руководителя, офисные диваны, офисные кресла и стулья, а также обсудить эргономику вашего офисного пространства в наших шоурумах</p>
           </div>
           <div class="showrooms__map">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A73166c24c5dd3062282ca53a080293b677af2fdc33296d6229c6a63c3f041843&amp;source=constructor" width="800" height="440" frameborder="0"></iframe>
+            <iframe class="showrooms__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A73166c24c5dd3062282ca53a080293b677af2fdc33296d6229c6a63c3f041843&amp;source=constructor"  height="440" frameborder="0"></iframe>
           </div>
         </div>
       </div>
@@ -89,20 +92,22 @@
         <div class="showroom__container">
           <div class="showroom__title-container">
             <div class="showroom__title">Шоурум Автозаводская</div>
-            <div class="showroom__tag">Скоро отрытие</div>
+            <div class="showroom__label showroom__label_disabled">Скоро отрытие</div>
           </div>
           <div class="showroom__content">
             <div class="showroom__contact">
               <div class="showroom__address">
-                <div class="showroom__address-title">Адрес</div>
+                <div class="showroom__address-title showroom__sub-title">Адрес</div>
                 <div class="showroom__address-content">г. Москва, 1-я улица улица Машиностроения, 10 </div>
               </div>
               <div class="showroom__phone">
-                <div class="showroom__phone-title">Телефон</div>
-                <div class="showroom__phone-content">+7 (495) 374-93-04</div>
+                <div class="showroom__phone-title showroom__sub-title">Телефон</div>
+                <div class="showroom__phone-content">
+                  <a href="tel:+7(495)3749304">+7 (495) 374-93-04</a>
+                  </div>
               </div>
               <div class="showroom__time">
-                <div class="showroom__time-title">Время работы</div>
+                <div class="showroom__time-title showroom__sub-title">Время работы</div>
                 <div class="showroom__time-content">пн-пт с 8:00 до 20:00</div>
               </div>
             </div>
@@ -110,19 +115,19 @@
               <div class="showroom__collection-title"> Представлены коллекции:</div>
               <ul class="showroom__collection-list">
                 <li class="showroom__collection-item">
-                  <a class="showroom__collection-link" href="#">Мебель для руководителя</a>
+                  <a class="showroom__tag" href="#">Мебель для руководителя</a>
                 </li>
                 <li class="showroom__collection-item">
-                  <a class="showroom__collection-link" href="#">Офисные кресла</a>
+                  <a class="showroom__tag" href="#">Офисные кресла</a>
                 </li>
                 <li class="showroom__collection-item">
-                  <a class="showroom__collection-link" href="#">Офисные кресла и стулья</a>
+                  <a class="showroom__tag" href="#">Офисные кресла и стулья</a>
                 </li>
                 <li class="showroom__collection-item">
-                  <a class="showroom__collection-link" href="#">Офисные диваны</a>
+                  <a class="showroom__tag" href="#">Офисные диваны</a>
                 </li>
                 <li class="showroom__collection-item">
-                  <a class="showroom__collection-link" href="#">Сопутствующие товары</a>
+                  <a class="showroom__tag" href="#">Сопутствующие товары</a>
                 </li>
               </ul>
             </div>
@@ -155,7 +160,7 @@
             </ul>
           </div>
           <div class="showroom__btn-container">
-            <a type="button" class="showroom__btn" href="#">Записаться в шоурум</a>
+            <a type="button" class="showroom__btn btn-major" href="#">Записаться в шоурум</a>
           </div>
         </div>
         

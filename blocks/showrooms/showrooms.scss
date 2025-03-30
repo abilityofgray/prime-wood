@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  gap: 46px;
+  justify-content: space-between;
+  gap: 60px;
 }
 .showrooms__title {
   font-family: "ProximaNova-Bold", sans-serif;
@@ -18,8 +18,13 @@
 .showrooms__content {
   
 }
+.showrooms__content {
+  width: 40%;
+}
 .showrooms__map {
-  iframe {
-    border-radius: 20px;
-  }
+  width: 60%;
+}
+.showrooms__iframe {
+  width: 100%;
+  border-radius: 20px;
 }

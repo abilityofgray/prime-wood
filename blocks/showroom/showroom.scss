@@ -1,6 +1,11 @@
+@use '../../color_scheme.scss';
+
 .showroom__content {
   display: grid;
   grid-template-columns: auto auto;
+}
+.showroom__container {
+  font-size: 16px;
 }
 .showroom__thumbnails-list {
   display: flex;
@@ -18,4 +23,48 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+.showroom__phone-content {
+  a {
+    font-family: "ProximaNova-SemiBold", sans-serif;
+  }
+  
+}
+.showroom__title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+.showroom__title {
+  font-family: "ProximaNova-Bold", sans-serif;
+  font-size: 40px;
+}
+.showroom__label {
+  font-family: "ProximaNova-SemiBold", sans-serif;
+  background-color: color_scheme.$accent-color-minor;
+  color: color_scheme.$cart-counter-text-color;
+  border-radius: 25px;
+  padding: 5px 8px;
+  font-size: 14px;
+
+}
+.showroom__label_disabled {
+  display: none;
+}
+.showroom__sub-title {
+  color: color_scheme.$text-color-accent;
+}
+.showroom__to-map-link {
+  font-family: "ProximaNova-SemiBold", sans-serif;
+}
+.showroom__collection-title {
+  font-family: "ProximaNova-SemiBold", sans-serif;
+  font-size: 22px;
+}
+.showroom__tag {
+  font-family: "ProximaNova-SemiBold", sans-serif;
+}
+.showroom__thumbnail-img {
+  border-radius: 20px;
 }
