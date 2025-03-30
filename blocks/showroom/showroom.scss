@@ -1,0 +1,21 @@
+.showroom__content {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.showroom__thumbnails-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.showroom__address,
+.showroom__phone,
+.showroom__time {
+  display: flex;
+  flex-direction: row;
+}
+.showroom__collection-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
