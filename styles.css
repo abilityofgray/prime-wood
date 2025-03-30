@@ -90,9 +90,37 @@ input[type=file] {
 }
 
 .container {
-  width: 1408px;
+  max-width: 100%;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: 1408px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .container {
+    width: 928px;
+  }
+}
+@media (max-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: 688px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+body {
+  font-family: "ProximaNova-Regular", sans-serif;
+  font-size: 14px;
 }
 
 .header__container {
@@ -100,6 +128,12 @@ input[type=file] {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding: 32px 0px;
+  font-family: "ProximaNova-SemiBold", sans-serif;
+  font-size: 16px;
+}
+.header__container a:visited {
+  color: #000000;
 }
 
 .navigate__list {
@@ -107,7 +141,7 @@ input[type=file] {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 25px;
+  gap: 40px;
 }
 
 .menu__list {
@@ -115,13 +149,20 @@ input[type=file] {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 25px;
+  gap: 40px;
+}
+.menu__list a {
+  color: #000000;
+}
+.menu__list a:visited {
+  color: #000000;
 }
 
 .breadcrumbs__container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
+  padding: 16px 0 32px 0;
 }
 
 .breadcrumbs__list {
@@ -129,7 +170,7 @@ input[type=file] {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 25px;
+  gap: 9px;
 }
 
 .breadcrumbs__item:not(:last-child)::after {
@@ -144,6 +185,23 @@ input[type=file] {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  gap: 46px;
+}
+
+.showrooms__title {
+  font-family: "ProximaNova-Bold", sans-serif;
+  font-size: 56px;
+  margin-bottom: 22px;
+}
+
+.showrooms__p {
+  font-family: "ProximaNova-SemiBold", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.showrooms__map iframe {
+  border-radius: 20px;
 }
 
 .showroom__content {
@@ -180,6 +238,31 @@ input[type=file] {
 
 input[type=submit] {
   cursor: pointer;
+}
+
+@font-face {
+  font-family: "ProximaNova-Bold";
+  src: url("./fonts/proximanova/ProximaNova-Bold.woff") format("woff"), url("./fonts/proximanova/ProximaNova-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ProximaNova-Regular";
+  src: url("./fonts/proximanova/ProximaNova-Regular.woff") format("woff"), url("./fonts/proximanova/ProximaNova-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ProximaNova-Light";
+  src: url("./fonts/proximanova/ProximaNova-Light.woff") format("woff"), url("./fonts/proximanova/ProximaNova-Light.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ProximaNova-SemiBold";
+  src: url("./fonts/proximanova/ProximaNova-Semibold.woff") format("woff"), url("./fonts/proximanova/ProximaNova-Semibold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,14 +1,15 @@
 .breadcrumbs__container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
+  padding: 16px 0 32px 0;
 }
 .breadcrumbs__list {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 25px;
+  gap: 9px;
 }
 .breadcrumbs__item {
 
