@@ -1,0 +1,84 @@
+
+
+.footer__section-list {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+.footer__link-container {
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  
+}
+.footer__section-title {
+  font-family: 'ProximaNova-SemiBold', sans-serif;
+  font-size: 20px;
+  margin-bottom: 21px;
+}
+
+.footer__section-item {
+}
+.footer__section.service {
+  .footer__section-list {
+    display: grid;
+    grid: subgrid;
+    grid-template-columns: repeat(2, 256px);
+    
+  }
+}
+.footer__city-wrap,
+.footer__phone-wrap,
+.footer__email-wrap,
+.footer__wathsapp-wrap
+ {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+.footer__city-name {
+  font-family: 'ProximaNova-SemiBold', sans-serif;
+  font-size: 16px;
+  
+}
+.footer__phone {
+  font-family: 'ProximaNova-SemiBold', sans-serif;
+  font-size: 18px;
+}
+.footer__email {
+  font-family: 'ProximaNova-SemiBold', sans-serif;
+  font-size: 16px;
+}
+.footer__wathsapp {
+  font-family: 'ProximaNova-SemiBold', sans-serif;
+  font-size: 16px;
+}
+.footer__section.about-company {
+  padding-left: 40px;
+}
+.footer__section.contacts {
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+.footer__city {
+  
+}
+.footer__contact {
+  
+}
+.footer__social {
+  
+}
+.footer__social-wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+.footer__contact-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

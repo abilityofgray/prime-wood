@@ -2,7 +2,7 @@
 
 
 .submit {
-  margin-bottom: 150px;
+  margin-bottom: 123px;
 }
 input[type="submit"] {
   cursor: pointer;
@@ -31,9 +31,7 @@ input[type="submit"] {
   justify-content: center;
   gap: 21px;
   
- 
-  input {
-    //padding: 16px 20px;
+ input {
     padding: 0 16px;
     height: 100%;
     background-color: color_scheme.$submit-input-bg-color;
