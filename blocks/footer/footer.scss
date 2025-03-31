@@ -9,6 +9,12 @@
   flex-direction: column;
   gap: 19px;
 }
+@media (min-width: 1024px ) and (max-width: 1439px) {
+  .footer__section-list {
+    display: block;
+    columns: 3;
+  }
+}
 .footer__link-container {
   padding-bottom: 34px;
   display: grid;
@@ -16,20 +22,43 @@
   margin-bottom: 41px;
   border-bottom: solid 1px color_scheme.$footer-border-color;
 }
+@media (min-width: 1024px ) and (max-width: 1439px) {
+  .footer__link-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 32px;
+  }
+}
 .footer__section-title {
   font-family: 'ProximaNova-SemiBold', sans-serif;
   font-size: 20px;
   margin-bottom: 21px;
 }
-
+@media (min-width: 1024px ) and (max-width: 1439px) {
+  .footer__section-title {
+    font-size: 18px;
+  }
+}
 .footer__section-item {
+
+}
+@media (min-width: 1024px ) and (max-width: 1439px) {
+  .footer__section-item {
+    margin-bottom: 22px;
+  }
 }
 .footer__section.service {
   .footer__section-list {
     display: grid;
-    grid: subgrid;
     grid-template-columns: repeat(2, 256px);
     
+  }
+}
+@media (min-width: 1024px ) and (max-width: 1439px) {
+  .footer__section.service {
+    .footer__section-list {
+      display: block;
+      columns: 3;
+    }
   }
 }
 .footer__city-wrap,
@@ -47,17 +76,37 @@
   font-size: 16px;
   
 }
+@media (min-width: 1024px ) and (max-width: 1439px) {
+  .footer__city-name {
+    font-size: 14px;
+  }
+}
 .footer__phone {
   font-family: 'ProximaNova-SemiBold', sans-serif;
   font-size: 18px;
+}
+@media (min-width: 1024px ) and (max-width: 1439px) {
+  .footer__phone {
+    font-size: 16px;
+  }
 }
 .footer__email {
   font-family: 'ProximaNova-SemiBold', sans-serif;
   font-size: 16px;
 }
+@media (min-width: 1024px ) and (max-width: 1439px) {
+  .footer__email {
+    font-size: 14px;
+  }
+}
 .footer__wathsapp {
   font-family: 'ProximaNova-SemiBold', sans-serif;
   font-size: 16px;
+}
+@media (min-width: 1024px ) and (max-width: 1439px) {
+  .footer__wathsapp {
+    font-size: 14px;
+  }
 }
 .footer__section.catalog {
   .footer__section-list-container {
@@ -67,11 +116,25 @@
 .footer__section.about-company {
   padding-left: 40px;
 }
+@media (min-width: 1024px ) and (max-width: 1439px) {
+  .footer__section.about-company {
+    padding-left: 0;
+    margin-top: -9px;
+    margin-bottom: 9px;
+  }
+}
 .footer__section.contacts {
   padding-left: 40px;
   display: flex;
   flex-direction: column;
   gap: 34px;
+}
+@media (min-width: 1024px ) and (max-width: 1439px) {
+  .footer__section.contacts {
+    padding-left: 0px;
+    flex-direction: row;
+    gap: 225px;
+  }
   
 }
 .footer__city {
@@ -83,6 +146,11 @@
 .footer__social {
   
 }
+@media (min-width: 1024px ) and (max-width: 1439px) {
+  .footer__social {
+    margin-left: -71px;
+  }
+}
 .footer__social-wrap {
   display: flex;
   flex-direction: row;
@@ -93,6 +161,11 @@
   flex-direction: column;
   gap: 16px;
 }
+@media (min-width: 1024px ) and (max-width: 1439px) {
+  .footer__contact-wrap {
+    gap: 13px;
+  }
+}
 .footer-section__btn {
   width: 130px;
   padding-right: 7px;
@@ -100,9 +173,19 @@
   align-items: center;
   justify-content: space-between;
 }
+@media (min-width: 1024px ) and (max-width: 1439px) {
+  .footer-section__btn {
+    width: 113px;
+  }
+}
 .footer-section__btn-name {
   font-family: 'ProximaNova-SemiBold', sans-serif;
   font-size: 16px;
+}
+@media (min-width: 1024px ) and (max-width: 1439px) {
+  .footer-section__btn-name {
+    font-size: 14px;
+  }
 }
 .footer-section__btn-icon {
 
@@ -129,6 +212,11 @@
   padding-right: 42px;
   gap: 35px;
 }
+@media (min-width: 1024px ) and (max-width: 1439px) {
+  .footer__copyrights-wrap {
+    font-size: 14px;
+  }
+}
 .footer__private-policy {
   a {
     font-family: 'ProximaNova-SemiBold', sans-serif;
@@ -144,5 +232,8 @@
   display: flex;
   align-items: center;
   gap: 2px;
+  
+}
+@media (min-width: 1024px ) and (max-width: 1439px) {
   
 }

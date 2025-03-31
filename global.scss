@@ -41,4 +41,10 @@ body {
     color: color_scheme.$text-color-major;
   }
 }
+@media (min-width: 1024px ) and (max-width: 1439px) {
+  body {
+    font-size: 12px;
+  }
+  
+}
 
