@@ -127,15 +127,6 @@ body a {
   color: #282828;
 }
 
-.btn-major {
-  font-family: "ProximaNova-SemiBold", sans-serif;
-  background-color: #55D287;
-  color: white;
-  font-size: 18px;
-  border-radius: 16px;
-  padding: 22px 56px;
-}
-
 @font-face {
   font-family: "ProximaNova-Bold";
   src: url("./fonts/proximanova/ProximaNova-Bold.woff") format("woff"), url("./fonts/proximanova/ProximaNova-Bold.woff2") format("woff2");
@@ -280,13 +271,45 @@ body a {
   border-radius: 20px;
 }
 
+.showrooms {
+  margin-bottom: 74px;
+}
+
 .showroom__content {
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 87px;
+  row-gap: 15px;
+}
+
+.showroom__contact {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.showroom__collection {
+  width: 45%;
 }
 
 .showroom__container {
   font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+  padding-bottom: 74px;
+}
+
+.showroom__container:not(:last-child) {
+  border-bottom: solid 1px #838B8E;
+}
+
+.showroom__list {
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
 }
 
 .showroom__thumbnails-list {
@@ -307,6 +330,7 @@ body a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 9px;
 }
 
 .showroom__phone-content a {
@@ -340,6 +364,7 @@ body a {
 
 .showroom__sub-title {
   color: #838B8E;
+  margin-right: 9px;
 }
 
 .showroom__to-map-link {
@@ -349,6 +374,7 @@ body a {
 .showroom__collection-title {
   font-family: "ProximaNova-SemiBold", sans-serif;
   font-size: 22px;
+  margin-bottom: 21px;
 }
 
 .showroom__tag {
@@ -357,6 +383,11 @@ body a {
 
 .showroom__thumbnail-img {
   border-radius: 20px;
+}
+
+.showroom__btn-container {
+  align-self: center;
+  padding: 20px 0;
 }
 
 .advantages__list {
@@ -368,6 +399,15 @@ body a {
 
 input[type=submit] {
   cursor: pointer;
+}
+
+.btn-major {
+  font-family: "ProximaNova-SemiBold", sans-serif;
+  background-color: #55D287;
+  color: white;
+  font-size: 18px;
+  border-radius: 16px;
+  padding: 17px 56px;
 }
 
 /*# sourceMappingURL=styles.css.map */
