@@ -9,6 +9,12 @@
     padding: 33px 0;
   }
 }
+
+@media  (min-width: 768px) and (max-width: 1023px) {
+  .footer__section {
+    line-height: 18px;
+  }
+}
 .footer__section-list {
   display: flex;
   flex-direction: column;
@@ -37,7 +43,8 @@
 @media  (min-width: 768px) and (max-width: 1023px) {
   .footer__link-container {
     grid-template-columns: repeat(1, 1fr);
-    gap: 43px;
+    gap: 36px;
+    margin-bottom: 25px;
   }
 }
 .footer__section-title {
@@ -53,7 +60,7 @@
 @media  (min-width: 768px) and (max-width: 1023px) {
   .footer__section-title {
     font-size: 18px;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
   }
 }
 .footer__section-item {
@@ -66,7 +73,7 @@
 }
 @media  (min-width: 768px) and (max-width: 1023px) {
   .footer__section-item {
-    margin-bottom: 14px;
+    margin-bottom: 17px;
   }
 }
 .footer__section.service {
@@ -133,7 +140,7 @@
 }
 .footer__section.catalog {
   .footer__section-list-container {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
 }
 .footer__section.about-company {
@@ -143,7 +150,7 @@
   .footer__section.about-company {
     padding-left: 0;
     margin-top: -9px;
-    margin-bottom: 9px;
+    margin-bottom: 13px;
   }
 }
 .footer__section.contacts {
@@ -163,15 +170,25 @@
   .footer__section.contacts {
     padding-left: 0px;
     flex-direction: row;
-    //gap: 161px;
+    gap: 0px;
   }
 }
 .footer__city {
   
 }
+@media  (min-width: 768px) and (max-width: 1023px) {
+  .footer__city {
+    margin-right: 145px;
+  }
+} 
 .footer__contact {
   
 }
+@media  (min-width: 768px) and (max-width: 1023px) {
+  .footer__contact {
+    margin-right: 72px;
+  }
+} 
 .footer__social {
   
 }
@@ -193,6 +210,11 @@
 @media (min-width: 1024px ) and (max-width: 1439px) {
   .footer__contact-wrap {
     gap: 13px;
+  }
+}
+@media  (min-width: 768px) and (max-width: 1023px) {
+  .footer__contact-wrap {
+    gap: 11px;
   }
 }
 .footer-section__btn {
@@ -232,6 +254,11 @@
   font-family: 'ProximaNova-SemiBold', sans-serif;
   font-size: 28px;
 }
+@media  (min-width: 768px) and (max-width: 1023px) {
+  .footer__company-rate {
+    font-size: 24px;
+  }
+}
 .footer__company-rating-label {
 
 }
@@ -251,6 +278,14 @@
     font-size: 14px;
   }
 }
+@media  (min-width: 768px) and (max-width: 1023px) {
+  .footer__copyrights-wrap {
+    padding-right: 37px;
+    align-items: center;
+    line-height: 17px;
+    gap: 30px;
+  }
+}
 .footer__private-policy {
   a {
     font-family: 'ProximaNova-SemiBold', sans-serif;
@@ -267,6 +302,19 @@
   align-items: center;
   gap: 2px;
   
+}
+@media  (min-width: 768px) and (max-width: 1023px) {
+  .footer__company-rating-container {
+    padding-right: 18px;
+  }
+}
+
+@media  (min-width: 768px) and (max-width: 1023px) {
+  .footer__section.contacts {
+    .footer__section-title {
+      margin-bottom: 22px;
+    }
+  }
 }
 @media (min-width: 1024px ) and (max-width: 1439px) {
   
