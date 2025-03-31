@@ -1,3 +1,66 @@
+@use '../../color_scheme.scss';
+
+
+.submit {
+  margin-bottom: 150px;
+}
 input[type="submit"] {
   cursor: pointer;
+}
+.submit__container {
+  background-color: color_scheme.$submit-bg-color;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+.submit__title {
+  font-family: "ProximaNova-Bold", sans-serif;
+  font-size: 48px;
+  margin-bottom: 51px;
+
+  
+}
+.submit__form {
+  display: grid;
+  grid-template-columns: 288px 288px;
+  grid-template-rows: repeat(3, 56px);
+  align-items: center;
+  justify-content: center;
+  gap: 21px;
+  
+ 
+  input {
+    //padding: 16px 20px;
+    padding: 0 16px;
+    height: 100%;
+    background-color: color_scheme.$submit-input-bg-color;
+    border-radius: 14px;
+    &::placeholder {
+      font-size: 16px;
+      color: color_scheme.$text-color-accent;
+    }
+  }
+  .submit__form-btn {
+    background-color: color_scheme.$accent-color-major;
+    align-self: center ;
+    justify-self: center;
+    width: 202px;
+    padding: 16px;
+  }
+
+  
+}
+.submit__form-name {
+  grid-column:  span 2;
+}
+.submit__form-btn {
+  grid-column: span 2;
+  
+}
+.submit__form-agreement {
+  grid-column: span 2;
+  padding-left: 4px;
 }

@@ -397,8 +397,90 @@ body a {
   justify-content: space-between;
 }
 
+.advantages__title {
+  font-family: "ProximaNova-SemiBold", sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+.advantages__item {
+  width: 208px;
+  height: 128px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  background-color: #F6F7F8;
+  border-radius: 20px;
+  padding: 16px 0 0 0;
+  gap: 8px;
+}
+
+.advantages {
+  margin-bottom: 158px;
+}
+
+.submit {
+  margin-bottom: 150px;
+}
+
 input[type=submit] {
   cursor: pointer;
+}
+
+.submit__container {
+  background-color: #EAECEE;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.submit__title {
+  font-family: "ProximaNova-Bold", sans-serif;
+  font-size: 48px;
+  margin-bottom: 51px;
+}
+
+.submit__form {
+  display: grid;
+  grid-template-columns: 288px 288px;
+  grid-template-rows: repeat(3, 56px);
+  align-items: center;
+  justify-content: center;
+  gap: 21px;
+}
+.submit__form input {
+  padding: 0 16px;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 14px;
+}
+.submit__form input::placeholder {
+  font-size: 16px;
+  color: #838B8E;
+}
+.submit__form .submit__form-btn {
+  background-color: #55D287;
+  align-self: center;
+  justify-self: center;
+  width: 202px;
+  padding: 16px;
+}
+
+.submit__form-name {
+  grid-column: span 2;
+}
+
+.submit__form-btn {
+  grid-column: span 2;
+}
+
+.submit__form-agreement {
+  grid-column: span 2;
+  padding-left: 4px;
 }
 
 .btn-major {
