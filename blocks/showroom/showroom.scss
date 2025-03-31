@@ -14,6 +14,12 @@
     row-gap: 28px;
   }
 }
+@media  (min-width: 768px) and (max-width: 1023px) {
+  .showroom__content {
+    column-gap: 50px;
+    row-gap: 0px;
+  }
+}
 .showroom__contact {
   width: 45%;
   display: flex;
@@ -55,10 +61,28 @@
     padding-bottom: 62px;
   }
 }
+@media  (min-width: 768px) and (max-width: 1023px) {
+  .showroom__container {
+    font-size: 14px;
+    gap: 33px;
+    padding-bottom: 62px;
+  }
+}
 .showroom__list {
   display: flex;
   flex-direction: column;
   gap: 75px;
+}
+@media (min-width: 1024px ) and (max-width: 1439px) {
+  .showroom__list {
+    gap: 63px;
+  }
+}
+@media  (min-width: 768px) and (max-width: 1023px) {
+  .showroom__list {
+    gap: 63px;
+    margin-bottom: 55px;
+  }
 }
 .showroom__thumbnails-list {
   display: flex;
@@ -73,10 +97,27 @@
     overflow-y: hidden;
     gap: 32px;
     padding-bottom: 28px;
-    scrollbar-width: 2px;
+    
   }
 }
+@media  (min-width: 768px) and (max-width: 1023px) {
+  .showroom__thumbnails-list {
+    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 32px;
+    padding-bottom: 34px;
+    
+  }
+  
+}
 @media (min-width: 1024px ) and (max-width: 1439px) {
+  .showroom__thumbnails-item {
+    flex-shrink: 0;
+
+  }
+}
+@media  (min-width: 768px) and (max-width: 1023px) {
   .showroom__thumbnails-item {
     flex-shrink: 0;
 
@@ -87,6 +128,12 @@
 .showroom__time {
   display: flex;
   flex-direction: row;
+}
+@media  (min-width: 768px) and (max-width: 1023px) {
+  .showroom__address {
+    flex-direction: column;
+  }
+  
 }
 .showroom__collection-list {
   display: flex;
@@ -116,6 +163,11 @@
     font-size: 36px;
   }
 }
+@media  (min-width: 768px) and (max-width: 1023px) {
+  .showroom__title {
+    font-size: 36px;
+  }
+}
 .showroom__label {
   font-family: "ProximaNova-SemiBold", sans-serif;
   background-color: color_scheme.$accent-color-minor;
@@ -140,6 +192,12 @@
 .showroom__to-map-link {
   font-family: "ProximaNova-SemiBold", sans-serif;
 }
+@media  (min-width: 768px) and (max-width: 1023px) {
+  .showroom__to-map {
+
+  }
+  
+}
 .showroom__collection-title {
   font-family: "ProximaNova-SemiBold", sans-serif;
   font-size: 22px;
@@ -148,6 +206,12 @@
 @media (min-width: 1024px ) and (max-width: 1439px) {
   .showroom__collection-title {
     font-size: 20px;
+  }
+}
+@media  (min-width: 768px) and (max-width: 1023px) {
+  .showroom__collection-title {
+    font-size: 20px;
+    margin-bottom: 13px;
   }
 }
 .showroom__tag {
@@ -162,7 +226,18 @@
     height: 282px;
   }
 }
+@media  (min-width: 768px) and (max-width: 1023px) {
+  .showroom__thumbnail-img {
+    width: 302px;
+    height: 202px;
+  }
+  
+}
 .showroom__btn-container {
   align-self: center;
   padding: 20px 0;
+}
+@media  (min-width: 768px) and (max-width: 1023px) {
+  
+  
 }

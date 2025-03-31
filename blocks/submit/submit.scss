@@ -9,6 +9,11 @@
     margin-bottom: 100px;
   }
 }
+@media  (min-width: 768px) and (max-width: 1023px) {
+  .submit {
+    margin-bottom: 94px;
+  }
+}
 input[type="submit"] {
   cursor: pointer;
 }
@@ -26,6 +31,12 @@ input[type="submit"] {
     padding: 32px 0;
   }
 }
+@media  (min-width: 768px) and (max-width: 1023px) {
+  .submit__container {
+    padding: 31px 0;
+  }
+  
+}
 .submit__title {
   font-family: "ProximaNova-Bold", sans-serif;
   font-size: 48px;
@@ -36,6 +47,11 @@ input[type="submit"] {
   .submit__title {
     font-size: 40px;
   }
+}
+@media  (min-width: 768px) and (max-width: 1023px) {
+  .submit__title {
+    font-size: 40px;
+  } 
 }
 .submit__form {
   display: grid;
@@ -75,6 +91,20 @@ input[type="submit"] {
     }
   }
 }
+@media  (min-width: 768px) and (max-width: 1023px) {
+  .submit__form {
+    grid-template-columns: 300px 300px;
+    gap: 21px;
+    input {
+      &::placeholder {
+        font-size: 14px;
+      }
+    }
+    .submit__form-btn {
+      width: 195px;
+    }
+  }
+}
 .submit__form-name {
   grid-column:  span 2;
 }
@@ -92,6 +122,16 @@ input[type="submit"] {
     font-size: 12px;
   }
 } 
+@media  (min-width: 768px) and (max-width: 1023px) {
+  .submit__form-agreement{
+    justify-self: center;
+    font-size: 12px;
+  }
+}
 @media (min-width: 1024px ) and (max-width: 1439px) {
+  
+}
+@media  (min-width: 768px) and (max-width: 1023px) {
+  
   
 }

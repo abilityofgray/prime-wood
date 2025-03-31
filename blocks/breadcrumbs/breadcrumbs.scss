@@ -11,6 +11,14 @@
     padding: 14px 0 51px 0;
   }
 }
+@media  (min-width: 768px) and (max-width: 1023px) {
+  .breadcrumbs__container {
+    padding: 12px 0 25px 0;
+    font-size: 12px;
+  }
+  
+}
+
 .breadcrumbs__list {
   display: flex;
   flex-direction: row;
@@ -37,4 +45,18 @@
       padding-left: 5px;
     }
   }
+}
+@media  (min-width: 768px) and (max-width: 1023px) {
+  .breadcrumbs__item {
+    &:not(:last-child) {
+      &::after {
+        padding-left: 3px;
+      }
+    }
+  }
+  
+}
+@media  (min-width: 768px) and (max-width: 1023px) {
+  
+  
 }

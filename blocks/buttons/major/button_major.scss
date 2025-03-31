@@ -14,6 +14,12 @@
     padding:  18px 56px;
   }
 }
+@media  (min-width: 768px) and (max-width: 1023px) {
+  .btn-major {
+    font-size: 16px;
+    padding:  18px 56px;
+  }
+}
 .btn-major:hover {
   
 }

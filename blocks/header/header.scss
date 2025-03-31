@@ -23,7 +23,28 @@
   }
   
 }
+@media  (min-width: 768px) and (max-width: 1023px) {
+  .header__container {
+    padding: 19px 0px;
+  }
+  
+}
 .navigate__container {
+  
+}
+@media  (min-width: 768px) and (max-width: 1023px) {
+  .navigate__container {
+    display: none;
+  }
+  
+}
+.menu__phone {
+
+}
+@media  (min-width: 768px) and (max-width: 1023px) {
+  .menu__phone {
+    display: none;
+  }
   
 }
 .menu__cart {
@@ -78,5 +99,9 @@
   &:first-child {
     margin-right: -8px;
   }
+}
+@media  (min-width: 768px) and (max-width: 1023px) {
+  
+  
 }
 
