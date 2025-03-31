@@ -10,23 +10,48 @@
   font-size: 56px;
   margin-bottom: 22px;
 }
+@media (min-width: 1024px ) and (max-width: 1439px) {
+  .showrooms__title {
+    font-size: 44px;
+    margin-bottom: 12px;
+  }
+}
 .showrooms__p {
   font-family: "ProximaNova-SemiBold", sans-serif;
   font-size: 16px;
   line-height: 24px;
 }
-.showrooms__content {
-  
+@media (min-width: 1024px ) and (max-width: 1439px) {
+  .showrooms__p {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
+
 .showrooms__content {
   width: 40%;
+}
+@media (min-width: 1024px ) and (max-width: 1439px) {
+  .showrooms__content {
+    width: 47%;
+  }
 }
 .showrooms__map {
   width: 60%;
 }
+@media (min-width: 1024px ) and (max-width: 1439px) {
+  .showrooms__map {
+    width: 46.5%;
+  }
+}
 .showrooms__iframe {
   width: 100%;
   border-radius: 20px;
+}
+@media (min-width: 1024px ) and (max-width: 1439px) {
+  .showrooms__iframe {
+    height: 235px;
+  }
 }
 .showrooms {
   margin-bottom: 74px;

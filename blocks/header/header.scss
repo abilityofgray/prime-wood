@@ -15,7 +15,13 @@
   a:visited {
     color: color_scheme.$text-color-major;
   }
-
+}
+@media (min-width: 1024px ) and (max-width: 1439px) {
+  .header__container {
+    padding: 25px 0px;
+    font-size: 12px;
+  }
+  
 }
 .navigate__container {
   
@@ -55,6 +61,16 @@
   }
   a:visited {
     color: color_scheme.$text-color-major;
+  }
+  
+}
+@media (min-width: 1024px ) and (max-width: 1439px) {
+  .navigate__list {
+    gap: 26px;
+  }
+  .menu__list {
+    gap: 24px;
+    
   }
   
 }

@@ -6,12 +6,23 @@
   justify-content: start;
   padding: 16px 0 32px 0;
 }
+@media (min-width: 1024px ) and (max-width: 1439px) {
+  .breadcrumbs__container {
+    padding: 14px 0 51px 0;
+  }
+}
 .breadcrumbs__list {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 9px;
+}
+@media (min-width: 1024px ) and (max-width: 1439px) {
+  .breadcrumbs__list {
+    font-size: 12px;
+    gap: 5px;
+  }
 }
 .breadcrumbs__item {
   &:last-child {

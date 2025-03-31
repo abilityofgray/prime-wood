@@ -11,7 +11,12 @@
     <div class="container">
       <div class="header__container">
         <div class="logo__container">
-          <img class="logo" src="./asset/img/logo/logo.jpg" alt="прайм-вуд логотип">
+          <picture>
+            <source media="(max-width: 500px)" srcset="./asset/img/logo/logo_360.jpg" >
+            <source media="(max-width: 768px)" srcset="./asset/img/logo/logo_768.jpg" >
+            <source media="(max-width: 1024px)" srcset="./asset/img/logo/logo_1024.jpg" >
+            <img class="logo" src="./asset/img/logo/logo.jpg" alt="прайм-вуд логотип">
+          </picture>
         </div>
         <nav class="navigate__container">
           <ul class="navigate__list">
@@ -65,10 +70,17 @@
     <div class="container">
       <div class="breadcrumbs__container">
         <ul class="breadcrumbs__list">
-          <li class="breadcrumbs__item">Главная</li>
-          <li class="breadcrumbs__item">О компании</li>
-          <li class="breadcrumbs__item">Наши проекты</li>
-          <li class="breadcrumbs__item">СИЭНПИ РУС</li>
+          <li class="breadcrumbs__item">
+            <a href="#">Главная</a></li>
+          <li class="breadcrumbs__item">
+            <a href="#">О компании</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="#">Наши проекты</a>
+          </li>
+          <li class="breadcrumbs__item">
+            СИЭНПИ РУС
+          </li>
         </ul>
       </div>
     </div>
