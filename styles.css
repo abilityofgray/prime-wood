@@ -421,7 +421,7 @@ body a {
 }
 
 .submit {
-  margin-bottom: 123px;
+  margin-bottom: 120px;
 }
 
 input[type=submit] {
@@ -483,6 +483,11 @@ input[type=submit] {
   padding-left: 4px;
 }
 
+.footer_border {
+  border-top: solid 1px #838B8E;
+  padding: 40px 0;
+}
+
 .footer__section-list {
   display: flex;
   flex-direction: column;
@@ -490,9 +495,11 @@ input[type=submit] {
 }
 
 .footer__link-container {
-  padding: 40px 0;
+  padding-bottom: 34px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 41px;
+  border-bottom: solid 1px #CED3D9;
 }
 
 .footer__section-title {
@@ -537,6 +544,10 @@ input[type=submit] {
   font-size: 16px;
 }
 
+.footer__section.catalog .footer__section-list-container {
+  margin-bottom: 24px;
+}
+
 .footer__section.about-company {
   padding-left: 40px;
 }
@@ -558,6 +569,49 @@ input[type=submit] {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.footer-section__btn {
+  width: 130px;
+  padding-right: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-section__btn-name {
+  font-family: "ProximaNova-SemiBold", sans-serif;
+  font-size: 16px;
+}
+
+.footer__company-rate {
+  font-family: "ProximaNova-SemiBold", sans-serif;
+  font-size: 28px;
+}
+
+.footer__copyrights-wrap {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-right: 42px;
+  gap: 35px;
+}
+
+.footer__private-policy a {
+  font-family: "ProximaNova-SemiBold", sans-serif;
+}
+
+.footer__company-rating-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer__company-rate-star-list {
+  display: flex;
+  align-items: center;
+  gap: 2px;
 }
 
 .btn-major {
