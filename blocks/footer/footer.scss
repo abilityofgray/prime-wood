@@ -53,14 +53,15 @@
 @media (min-width: 1024px ) and (max-width: 1439px) {
   .footer__link-container {
     grid-template-columns: repeat(1, 1fr);
-    gap: 32px;
+    gap: 35px;
+    margin-bottom: 38px;
   }
 }
 @media  (min-width: 768px) and (max-width: 1023px) {
   .footer__link-container {
     grid-template-columns: repeat(1, 1fr);
     gap: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
 }
 @media  (max-width: 767px) {
@@ -111,7 +112,9 @@
 .footer__section.service {
   .footer__section-list {
     display: grid;
+    grid-template-rows: repeat(9, auto);
     grid-template-columns: repeat(2, 256px);
+    grid-auto-flow: column;
     
   }
 }
@@ -204,6 +207,13 @@
     margin-bottom: 20px;
   }
 }
+@media (min-width: 1024px ) and (max-width: 1439px) {
+  .footer__section.catalog {
+    .footer__section-list-container {
+      margin-bottom: 24px;
+    }
+  }
+}
 @media  (max-width: 767px) {
   .footer__section.catalog {
     .footer__section-list-container {
@@ -219,11 +229,18 @@
 .footer__section.about-company {
   padding-left: 40px;
 }
-@media (min-width: 768px ) and (max-width: 1439px) {
+@media (min-width: 1024px ) and (max-width: 1439px) {
   .footer__section.about-company {
     padding-left: 0;
     margin-top: -9px;
-    margin-bottom: 13px;
+    margin-bottom: 5px;
+  }
+}
+@media  (min-width: 768px) and (max-width: 1023px) {
+  .footer__section.about-company {
+    padding-left: 0;
+    margin-top: -9px;
+    margin-bottom: 12px;
   }
 }
 @media  (max-width: 767px) {
