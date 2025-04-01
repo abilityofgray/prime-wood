@@ -1,9 +1,7 @@
 @use '../../color_scheme.scss';
 @use '../../fonts/fonts';
 
-.logo__container {
-  
-}
+
 @media  (max-width: 580px) {
   header .container{
     background-color: color_scheme.$card-bg-color;
@@ -40,17 +38,10 @@
     padding: 13px 0px;
   }
 }
-.navigate__container {
-  
-}
 @media  (min-width: 768px) and (max-width: 1023px) {
   .ismobile_disabled {
     display: none;
   }
-  .navigate__container {
-    
-  }
-  
 }
 @media  (max-width: 767px) {
   .ismobile_disabled {
@@ -70,14 +61,6 @@
     display: block;
   }
 }
-.menu__phone {
-
-}
-@media  (min-width: 768px) and (max-width: 1023px) {
-  
-  
-}
-
 .menu__cart {
   position: relative;
   margin-right: 9px;
@@ -163,9 +146,7 @@
     align-items: center;
     justify-content: center;
   }
-  &:first-child {
-    //margin-right: -8px;
-  }
+  
 }
 .menu__mobile-btn-icon {
   width: 15px;
