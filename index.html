@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>prime-wood</title>
   <link rel="stylesheet" href="./styles.css">
+  <script src="./blocks/menu_mobile/menu_mobile.js"></script>
 </head>
 <body>
   <header>
@@ -13,12 +14,12 @@
         <div class="logo__container">
           <picture>
             <source media="(max-width: 500px)" srcset="./asset/img/logo/logo_360.jpg" >
-            <source media="(max-width: 768px)" srcset="./asset/img/logo/logo_768.jpg" >
-            <source media="(max-width: 1024px)" srcset="./asset/img/logo/logo_1024.jpg" >
+            <source media="(max-width: 1024px)" srcset="./asset/img/logo/logo_768.jpg" >
+            <source media="(max-width: 1439px)" srcset="./asset/img/logo/logo_1024.jpg" >
             <img class="logo" src="./asset/img/logo/logo.jpg" alt="прайм-вуд логотип">
           </picture>
         </div>
-        <nav class="navigate__container">
+        <nav class="navigate__container ismobile_disabled">
           <ul class="navigate__list">
             <li class="navigate__item">
               <a class="navigate__link" href="">Каталог</a>
@@ -34,34 +35,42 @@
         <div class="menu__container">
           <nav class="menu">
             <ul class="menu__list">
-              <li class="menu__item">
-                <a class="menu__phone" href="tel:+7(495)120-53-91">+7 (495) 120-53-91</a>
+              <li class="menu__item ismobile_disabled">
+                <a role="button" class="menu__phone" href="tel:+7(495)120-53-91">+7 (495) 120-53-91</a>
               </li>
-              <li class="menu__item">
-                <a class="menu__mobile" href="#">
+              <li class="menu__item ismobile_disabled">
+                <a role="link" class="menu__mobile" href="#">
                   <img src="./asset/icon/mobile.svg" alt="мобильная версия">
                 </a>
               </li>
               <li class="menu__item">
-                <a class="menu__search" href="#">
+                <a role="button" class="menu__search" href="#">
                   <img src="./asset/icon/search.svg" alt="поиск">
                 </a>
               </li>
               <li class="menu__item">
-                <a class="menu__user" href="#">
+                <a role="link" class="menu__user" href="#">
                   <img src="./asset/icon/user.svg" alt="профиль">
                 </a>
               </li>
               <li class="menu__item">
-                <a class="menu__cart" href="#">
+                <a role="link" class="menu__cart" href="#">
                   <img src="./asset/icon/cart.svg" alt="корзина">
                   <div class="menu__cart-counter-wrap">
                     <div class="menu__cart-counter">44</div>
                   </div>
                 </a>
               </li>
+              <li class="menu__item ismobile_enabled">
+                <a role="button" class="menu__mobile-btn" href="#">
+                  <img src="./asset/icon/menu_mobile.svg" alt="корзина">
+                </a>
+              </li>
             </ul>
           </nav>
+        </div>
+        <div class="mobile__menu-container">
+          <nav class="mobile__menu"></nav>
         </div>
       </div>
     </div>
