@@ -4,6 +4,11 @@
 .logo__container {
   
 }
+@media  (max-width: 767px) {
+  header .container{
+    background-color: color_scheme.$card-bg-color;
+  }
+}
 .header__container {
   display: flex;
   flex-direction: row;
@@ -30,6 +35,11 @@
   }
   
 }
+@media  (max-width: 767px) {
+  .header__container {
+    padding: 13px 0px;
+  }
+}
 .navigate__container {
   
 }
@@ -41,6 +51,24 @@
     
   }
   
+}
+@media  (max-width: 767px) {
+  .ismobile_disabled {
+    display: none;
+  }
+}
+.ismobile_enabled {
+  display: none;
+}
+@media  (min-width: 768px) and (max-width: 1023px) {
+  .ismobile_enabled {
+    display: block;
+  }
+}
+@media  (max-width: 767px) {
+  .ismobile_enabled {
+    display: block;
+  }
 }
 .menu__phone {
 
@@ -82,11 +110,16 @@
   gap: 22px;
   a {
     color: color_scheme.$text-color-major;
+    
   }
   a:visited {
     color: color_scheme.$text-color-major;
   }
   
+}
+.menu__item-icon {
+  width: 20px;
+  height: 20px;
 }
 @media (min-width: 1024px ) and (max-width: 1439px) {
   .navigate__list {
@@ -104,6 +137,13 @@
     
   }
 }
+@media  (max-width: 767px) {
+  .menu__list {
+    gap: 0px;
+    
+  }
+}
+
 .menu__item {
   &:not(:first-child) {
     width: 40px;
@@ -121,8 +161,15 @@
     //margin-right: -8px;
   }
 }
-
+.menu__mobile-btn-icon {
+  width: 15px;
+  height: 15px;
+}
 @media  (min-width: 768px) and (max-width: 1023px) {
+  
+  
+}
+@media  (max-width: 767px) {
   
   
 }

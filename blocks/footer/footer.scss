@@ -47,6 +47,14 @@
     margin-bottom: 25px;
   }
 }
+@media  (max-width: 767px) {
+  .footer__link-container {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    margin-bottom: 25px;
+  }
+}
 .footer__section-title {
   font-family: 'ProximaNova-SemiBold', sans-serif;
   font-size: 20px;
@@ -61,6 +69,12 @@
   .footer__section-title {
     font-size: 18px;
     margin-bottom: 26px;
+  }
+}
+@media  (max-width: 767px) {
+  .footer__section-title {
+    font-size: 18px;
+    margin-bottom: 0px;
   }
 }
 .footer__section-item {
@@ -88,6 +102,14 @@
     .footer__section-list {
       display: block;
       columns: 3;
+    }
+  }
+}
+@media  (max-width: 767px) {
+  .footer__section.service {
+    .footer__section-list {
+      display: flex;
+      flex-direction: column;
     }
   }
 }
@@ -143,6 +165,13 @@
     margin-bottom: 20px;
   }
 }
+@media  (max-width: 767px) {
+  .footer__section.catalog {
+    .footer__section-list-container {
+      margin-bottom: 0px;
+    }
+  }
+ }
 .footer__section.about-company {
   padding-left: 40px;
 }
@@ -151,6 +180,13 @@
     padding-left: 0;
     margin-top: -9px;
     margin-bottom: 13px;
+  }
+}
+@media  (max-width: 767px) {
+  .footer__section.about-company {
+    padding-left: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
 .footer__section.contacts {
@@ -170,6 +206,13 @@
   .footer__section.contacts {
     padding-left: 0px;
     flex-direction: row;
+    gap: 0px;
+  }
+}
+@media  (max-width: 767px) {
+  .footer__section.contacts {
+    padding-left: 0px;
+    flex-direction: column;
     gap: 0px;
   }
 }
@@ -308,7 +351,12 @@
     padding-right: 18px;
   }
 }
-
+@media  (max-width: 767px) {
+  .footer__company-rating-container {
+    order: -1;
+    padding-right: 0px;
+  }
+}
 @media  (min-width: 768px) and (max-width: 1023px) {
   .footer__section.contacts {
     .footer__section-title {
@@ -321,4 +369,9 @@
 }
 @media  (min-width: 768px) and (max-width: 1023px) {
   
+}
+@media  (max-width: 767px) {
+ .desktop-footer-catalog {
+    display: none;
+  }
 }

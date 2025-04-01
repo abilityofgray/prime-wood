@@ -6,6 +6,7 @@
   <title>prime-wood</title>
   <link rel="stylesheet" href="./styles.css">
   <script src="./blocks/menu_mobile/menu_mobile.js"></script>
+  <script src="./blocks/footer_accordion/footer_accordion.js"></script>
 </head>
 <body>
   <header>
@@ -40,22 +41,22 @@
               </li>
               <li class="menu__item ismobile_disabled">
                 <a role="link" class="menu__mobile" href="#">
-                  <img src="./asset/icon/mobile.svg" alt="мобильная версия">
+                  <img class="menu__item-icon" src="./asset/icon/mobile.svg" alt="мобильная версия">
                 </a>
               </li>
               <li class="menu__item">
                 <a role="button" class="menu__search" href="#">
-                  <img src="./asset/icon/search.svg" alt="поиск">
+                  <img class="menu__item-icon" src="./asset/icon/search.svg" alt="поиск">
                 </a>
               </li>
               <li class="menu__item">
                 <a role="link" class="menu__user" href="#">
-                  <img src="./asset/icon/user.svg" alt="профиль">
+                  <img class="menu__item-icon" src="./asset/icon/user.svg" alt="профиль">
                 </a>
               </li>
               <li class="menu__item">
                 <a role="link" class="menu__cart" href="#">
-                  <img src="./asset/icon/cart.svg" alt="корзина">
+                  <img class="menu__item-icon" src="./asset/icon/cart.svg" alt="корзина">
                   <div class="menu__cart-counter-wrap">
                     <div class="menu__cart-counter">44</div>
                   </div>
@@ -63,7 +64,7 @@
               </li>
               <li class="menu__item ismobile_enabled">
                 <a role="button" class="menu__mobile-btn" href="#">
-                  <img src="./asset/icon/menu_mobile.svg" alt="корзина">
+                  <img class="menu__mobile-btn-icon" src="./asset/icon/menu_mobile.svg" alt="мобильное меню">
                 </a>
               </li>
             </ul>
@@ -284,19 +285,19 @@
               <div class="advantages__icon">
                 <img src="./asset/advantages_icon/business.svg" alt="подбор офисной мебели">
               </div>
-              <div class="advantages__title">Подборка <br> офисной мебели</div>
+              <div class="advantages__title">Подборка офисной мебели</div>
             </li>
             <li class="advantages__item">
               <div class="advantages__icon">
                 <img src="./asset/advantages_icon/delivery.svg" alt="быстрая доставка">
               </div>
-              <div class="advantages__title">Быстрая <br> доставка</div>
+              <div class="advantages__title">Быстрая доставка</div>
             </li>
             <li class="advantages__item">
               <div class="advantages__icon">
                 <img src="./asset/advantages_icon/tools.svg" alt="сборка">
               </div>
-              <div class="advantages__title">Аккуратная <br> сборка</div>
+              <div class="advantages__title">Аккуратная сборка</div>
             </li>
             <li class="advantages__item">
               <div class="advantages__icon">
@@ -329,7 +330,12 @@
     <div class="container">
       <div class="footer__link-container">
         <div class="footer__section catalog">
-          <div class="footer__section-title">Каталог</div>
+          <div class="footer__section-title desktop-footer-catalog">Каталог</div>
+          
+          <div class="mobile-footer-catalog__btn-wrap">
+            <a role="button" class="footer__section-title mobile-footer-catalog__btn" >Каталог</a>
+            <img class="mobile-footer-catalog__btn-icon" src="./asset/icon/accordion_icon.svg" alt="">
+          </div>
           <div class="footer__section-list-container">
             <ul class="footer__section-list">
               <li class="footer__section-item"><a role="button" class="footer__section-link" href="">Мебель для персонала</a></li>
@@ -339,7 +345,7 @@
               <li class="footer__section-item"><a role="button" class="footer__section-link" href="">Офисные диваны</a></li>
               <li class="footer__section-item"><a role="button" class="footer__section-link" href="">Домашний офис</a></li>
               <li class="footer__section-item"><a role="button" class="footer__section-link" href="">Ресепшены</a></li>
-              <li class="footer__section-item"><a role="button" class="footer__section-link" href="">Весь каталог</a></li>
+              <li class="footer__section-item"><a role="button" class="footer__section-link" href="">Металлическая мебель</a></li>
             </ul>
           </div>
           <div class="footer-section__btn-wrap">
@@ -350,7 +356,11 @@
           </div>
         </div>
         <div class="footer__section service">
-          <div class="footer__section-title">Услуги и сервисы</div>
+          <div class="footer__section-title desktop-footer-catalog">Услуги и сервисы</div>
+          <div class="mobile-footer-catalog__btn-wrap">
+            <a role="button" class="footer__section-title mobile-footer-catalog__btn" >Услуги и сервисы</a>
+            <img class="mobile-footer-catalog__btn-icon" src="./asset/icon/accordion_icon.svg" alt="">
+          </div>
           <div class="footer__section-list-container">
             <ul class="footer__section-list">
               <li class="footer__section-item"><a role="button" class="footer__section-link" href="">Дизайн-проект офиса</a></li>
@@ -377,7 +387,11 @@
           </div>
         </div>
         <div class="footer__section about-company">
-          <div class="footer__section-title">О компании</div>
+          <div class="footer__section-title desktop-footer-catalog">О компании</div>
+          <div class="mobile-footer-catalog__btn-wrap">
+            <a role="button" class="footer__section-title mobile-footer-catalog__btn" >О компании</a>
+            <img class="mobile-footer-catalog__btn-icon" src="./asset/icon/accordion_icon.svg" alt="">
+          </div>
           <div class="footer__section-list-container">
             <ul class="footer__section-list">
               <li class="footer__section-item"><a role="button" class="footer__section-link" href="">О нас</a></li>
