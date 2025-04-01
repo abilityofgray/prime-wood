@@ -45,6 +45,7 @@
 } 
 @media  (max-width: 767px) {
   .advantages__title {
+    text-align: start;
     font-size: 16px;
   }
 }
@@ -59,11 +60,21 @@
   border-radius: 20px;
   padding: 16px 0 0 0 ;
   gap: 8px;
+  .advantages__title {
+    &:nth-child(2) {
+      width: 69%;
+    }
+  }
 }
 @media (min-width: 1024px ) and (max-width: 1439px) {
   .advantages__item {
     width: 288px;
     height: 128px;
+    .advantages__title {
+      &:nth-child(2) {
+        width: 45%;
+      }
+    }
   }
 }
 @media  (min-width: 768px) and (max-width: 1023px) {
@@ -72,7 +83,6 @@
     height: 128px;
     gap: 10px;
     .advantages__title {
-      
       &:nth-child(2) {
         width: 41%;
       }

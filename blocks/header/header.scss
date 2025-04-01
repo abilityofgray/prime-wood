@@ -118,8 +118,14 @@
   
 }
 .menu__item-icon {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
+}
+@media  (max-width: 1439px) {
+  .menu__item-icon {
+    width: 20px;
+    height: 20px;
+  }
 }
 @media (min-width: 1024px ) and (max-width: 1439px) {
   .navigate__list {
