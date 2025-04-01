@@ -7,6 +7,7 @@
   font-size: 18px;
   border-radius: 16px;
   padding:  17px 56px;
+  transition: background-color 0.3s ease-in;
 }
 @media (min-width: 1024px ) and (max-width: 1439px) {
   .btn-major {
@@ -28,5 +29,5 @@
   }
 }
 .btn-major:hover {
-  
+  background-color: color_scheme.$accent-color-sup;
 }

@@ -171,6 +171,13 @@
   width: 15px;
   height: 15px;
 }
+.navigate__link {
+  border-bottom: 0px solid color_scheme.$accent-color-sup;
+  transition: all 0.3s ease;
+  &:hover {
+    border-bottom: 1px solid color_scheme.$accent-color-major;
+  }
+}
 @media  (min-width: 768px) and (max-width: 1023px) {
   
   

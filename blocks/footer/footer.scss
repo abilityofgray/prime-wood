@@ -9,7 +9,11 @@
     padding: 33px 0;
   }
 }
-
+@media  (max-width: 767px) {
+  .footer_border {
+    padding: 31px 0;
+  }
+}
 @media  (min-width: 768px) and (max-width: 1023px) {
   .footer__section {
     line-height: 18px;
@@ -26,7 +30,19 @@
     columns: 3;
   }
 }
-
+@media  (max-width: 767px) {
+  .footer__section-list {
+    gap: 17px;
+    padding-top: 0px;
+    transition: padding 0.3s ease;
+  }
+  .footer__section-list-container_open {
+    .footer__section-list {
+      padding-top: 20px;
+    }
+  }
+  
+}
 .footer__link-container {
   padding-bottom: 34px;
   display: grid;
@@ -44,15 +60,17 @@
   .footer__link-container {
     grid-template-columns: repeat(1, 1fr);
     gap: 36px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 }
 @media  (max-width: 767px) {
   .footer__link-container {
+    
     display: flex;
     flex-direction: column;
-    gap: 36px;
-    margin-bottom: 25px;
+    gap: 27px;
+    padding-bottom: 24px;
+    margin-bottom: 21px;
   }
 }
 .footer__section-title {
@@ -133,11 +151,22 @@
     font-size: 14px;
   }
 }
+@media  (max-width: 767px) {
+  .footer__city-name {
+    font-size: 14px;
+  }
+}
 .footer__phone {
   font-family: 'ProximaNova-SemiBold', sans-serif;
   font-size: 18px;
 }
+
 @media (min-width: 768px ) and (max-width: 1439px) {
+  .footer__phone {
+    font-size: 16px;
+  }
+}
+@media  (max-width: 767px) {
   .footer__phone {
     font-size: 16px;
   }
@@ -151,11 +180,21 @@
     font-size: 14px;
   }
 }
+@media  (max-width: 767px) {
+  .footer__email {
+    font-size: 14px;
+  }
+}
 .footer__wathsapp {
   font-family: 'ProximaNova-SemiBold', sans-serif;
   font-size: 16px;
 }
 @media (min-width: 768px ) and (max-width: 1439px) {
+  .footer__wathsapp {
+    font-size: 14px;
+  }
+}
+@media  (max-width: 767px) {
   .footer__wathsapp {
     font-size: 14px;
   }
@@ -172,6 +211,11 @@
     }
   }
  }
+ @media  (max-width: 767px) {
+  .footer__section-list-container {
+    
+  }
+ }
 .footer__section.about-company {
   padding-left: 40px;
 }
@@ -184,9 +228,10 @@
 }
 @media  (max-width: 767px) {
   .footer__section.about-company {
+    
     padding-left: 0;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: -4px;
   }
 }
 .footer__section.contacts {
@@ -211,9 +256,11 @@
 }
 @media  (max-width: 767px) {
   .footer__section.contacts {
+    padding-top: 25px;
+    border-top: solid 1px color_scheme.$footer-border-color;
     padding-left: 0px;
     flex-direction: column;
-    gap: 0px;
+    gap: 23px;
   }
 }
 .footer__city {
@@ -272,11 +319,21 @@
     width: 113px;
   }
 }
+@media  (max-width: 767px) {
+  .footer-section__btn {
+    width: 115px;
+  }
+}
 .footer-section__btn-name {
   font-family: 'ProximaNova-SemiBold', sans-serif;
   font-size: 16px;
 }
 @media (min-width: 768px ) and (max-width: 1439px) {
+  .footer-section__btn-name {
+    font-size: 14px;
+  }
+}
+@media  (max-width: 767px) {
   .footer-section__btn-name {
     font-size: 14px;
   }
@@ -293,6 +350,12 @@
     width: 58%;
   }
 }
+@media  (max-width: 767px) {
+  .footer__copyrights {
+    margin-bottom: 9px;
+    
+  }
+}
 .footer__company-rate {
   font-family: 'ProximaNova-SemiBold', sans-serif;
   font-size: 28px;
@@ -300,6 +363,11 @@
 @media  (min-width: 768px) and (max-width: 1023px) {
   .footer__company-rate {
     font-size: 24px;
+  }
+}
+@media  (max-width: 767px) {
+  .footer__company-rate {
+    font-size: 23px;
   }
 }
 .footer__company-rating-label {
@@ -329,6 +397,14 @@
     gap: 30px;
   }
 }
+@media  (max-width: 767px) {
+  .footer__copyrights-wrap {
+    padding-right: 0px;
+    align-items: center;
+    line-height: 17px;
+    gap: 19px;
+  }
+}
 .footer__private-policy {
   a {
     font-family: 'ProximaNova-SemiBold', sans-serif;
@@ -353,6 +429,7 @@
 }
 @media  (max-width: 767px) {
   .footer__company-rating-container {
+    line-height: 27px;
     order: -1;
     padding-right: 0px;
   }
@@ -364,6 +441,23 @@
     }
   }
 }
+
+@media  (max-width: 767px) {
+ .desktop-footer-catalog {
+    display: none;
+  }
+}
+
+.footer__contacts-container {
+
+}
+@media  (max-width: 767px) {
+  .footer__contacts-container {
+    .footer__section-title {
+      margin-bottom: 16px
+    }
+  }
+}
 @media (min-width: 1024px ) and (max-width: 1439px) {
   
 }
@@ -371,7 +465,5 @@
   
 }
 @media  (max-width: 767px) {
- .desktop-footer-catalog {
-    display: none;
-  }
+  
 }

@@ -146,6 +146,9 @@
     padding-bottom: 34px;
   }
 }
+.showroom__thumbnails-item {
+  position: relative;
+}
 @media (min-width: 1024px ) and (max-width: 1439px) {
   .showroom__thumbnails-item {
     flex-shrink: 0;
@@ -322,6 +325,19 @@
     height: 48px;
     align-items: center;
     justify-content: center;
+  }
+}
+.showroom__play-btn_disabled {
+  display: none;
+}
+.showroom__play-btn {
+  position: absolute;
+  top: 40%;
+  left: 43%;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  &:hover {
+    opacity: 1;
   }
 }
 
