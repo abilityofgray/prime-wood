@@ -888,6 +888,18 @@ body a {
   opacity: 1;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .showroom__play-btn {
+    top: 36%;
+    left: 41%;
+  }
+}
+@media (max-width: 767px) {
+  .showroom__play-btn {
+    top: 36%;
+    left: 40%;
+  }
+}
 .advantages__list {
   display: flex;
   flex-direction: row;
@@ -1111,6 +1123,8 @@ input[type=submit] {
 
 @media (min-width: 1024px) and (max-width: 1439px) {
   .submit__form {
+    gap: 17px;
+    grid-template-rows: repeat(3, 60px);
     gap: 20px;
   }
   .submit__form input::placeholder {
